@@ -3,14 +3,17 @@
 //
 
 #include "Game.h"
-#include <string>
+#include <iostream>
+
+Game::GameState Game::gameState = Uninitialized;
+sf::RenderWindow Game::mainWindow;
 
 void Game::start()
 {
     if (gameState != Uninitialized)
         return;
 
-    mainWindow.create(sf::VideoMode(1024, 768, 32), "Pyros");
+    mainWindow.create(sf::VideoMode(1024, 768, 32), "Pyros", sf::Style::Titlebar | sf::Style::Close);
     gameState = Playing;
 
     while (!isExiting())
@@ -36,7 +39,19 @@ void Game::gameLoop()
         {
             case Playing:
 
+                mainWindow.clear(sf::Color(255,0,0));
+                mainWindow.display();
+
+                if (currentEvent.type == sf::Event::Closed);
+                {
+                    gameState = Exiting;
+                }
+
+                break;
 
         }
+
+
     }
 }
+
