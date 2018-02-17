@@ -2,11 +2,8 @@
 // Created by charles on 15/02/18.
 //
 
-#include "Game.h"
-#include <iostream>
 
-Game::GameState Game::gameState = Uninitialized;
-sf::RenderWindow Game::mainWindow;
+#include "Game.h"
 
 void Game::start()
 {
@@ -14,7 +11,7 @@ void Game::start()
         return;
 
     mainWindow.create(sf::VideoMode(1024, 768, 32), "Pyros", sf::Style::Titlebar | sf::Style::Close);
-    gameState = Playing;
+    gameState = Game::Playing;
 
     while (!isExiting())
     {
@@ -26,32 +23,30 @@ void Game::start()
 
 bool Game::isExiting()
 {
-    return gameState == Exiting;
+    return gameState == Game::Exiting;
 }
 
 void Game::gameLoop()
 {
     sf::Event currentEvent;
-
     while (mainWindow.pollEvent(currentEvent))
     {
         switch (gameState)
         {
-            case Playing:
+            case Game::Playing:
 
                 mainWindow.clear(sf::Color(255,0,0));
                 mainWindow.display();
 
-                if (currentEvent.type == sf::Event::Closed);
+                if (currentEvent.type == sf::Event::Closed)
                 {
-                    gameState = Exiting;
+                    gameState = Game::Exiting;
                 }
 
                 break;
-
         }
-
-
     }
 }
 
+Game::GameState Game::gameState = Uninitialized;
+sf::RenderWindow Game::mainWindow;

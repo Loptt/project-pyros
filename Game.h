@@ -24,5 +24,4 @@ private:
     static sf::RenderWindow mainWindow;
 };
 
-
 #endif //PROJECT_PYROS_GAME_H
