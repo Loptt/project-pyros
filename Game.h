@@ -17,10 +17,13 @@ private:
     static bool isExiting();
     static void gameLoop();
 
+    static void showSplashScreen();
+    static void showMainMenu();
+
     enum GameState {Uninitialized, ShowingSplash, Paused, ShowingMenu, Playing,
                     Exiting};
-
     static GameState gameState;
+
     static sf::RenderWindow mainWindow;
 };
 

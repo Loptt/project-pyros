@@ -4,6 +4,8 @@
 
 
 #include "Game.h"
+#include "SplashScreen.h"
+#include "MainMenu.h"
 
 void Game::start()
 {
@@ -11,7 +13,7 @@ void Game::start()
         return;
 
     mainWindow.create(sf::VideoMode(1024, 768, 32), "Pyros", sf::Style::Titlebar | sf::Style::Close);
-    gameState = Game::Playing;
+    gameState = Game::ShowingSplash;
 
     while (!isExiting())
     {
@@ -33,6 +35,13 @@ void Game::gameLoop()
     {
         switch (gameState)
         {
+            case Game::ShowingSplash:
+                showSplashScreen();
+                break;
+
+            case Game::ShowingMenu:
+                break;
+
             case Game::Playing:
 
                 mainWindow.clear(sf::Color(255,0,0));
@@ -49,4 +58,28 @@ void Game::gameLoop()
 }
 
 Game::GameState Game::gameState = Uninitialized;
+
+void Game::showSplashScreen()
+{
+    SplashScreen splashScreen;
+    splashScreen.show(mainWindow);
+    gameState = Game::ShowingMenu;
+}
+
+void Game::showMainMenu()
+{
+    MainMenu menu;
+    MainMenu::MenuResult result = menu.show(mainWindow);
+
+    switch (result)
+    {
+        case MainMenu::Exit:
+            gameState = Game::Exiting;
+            break;
+        case MainMenu::Play:
+            gameState = Game::Playing;
+            break;
+    }
+}
+
 sf::RenderWindow Game::mainWindow;
