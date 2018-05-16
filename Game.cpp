@@ -70,7 +70,7 @@ void Game::gameLoop()
         switch (runningState)
         {
             case BuildMode:
-                
+
                 break;
 
             case WaveMode:

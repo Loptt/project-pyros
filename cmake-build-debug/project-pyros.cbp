@@ -5,7 +5,7 @@
 		<Option title="project-pyros"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cmake-modules\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\images\;CMake Files\cmake-modules\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/charles/Github/project-pyros/cmake-build-debug"/>
@@ -126,8 +126,8 @@
 		<Unit filename="/home/charles/Github/project-pyros/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/charles/Github/project-pyros/Splashscreen.png">
-			<Option virtualFolder="CMake Files\"/>
+		<Unit filename="/home/charles/Github/project-pyros/images/Splashscreen.png">
+			<Option virtualFolder="CMake Files\images\"/>
 		</Unit>
 		<Unit filename="/home/charles/Github/project-pyros/cmake-modules/FindSFML.cmake">
 			<Option virtualFolder="CMake Files\cmake-modules\"/>
