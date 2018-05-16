@@ -3,6 +3,7 @@
 //
 
 
+#include <iostream>
 #include "Game.h"
 #include "SplashScreen.h"
 #include "MainMenu.h"
@@ -17,7 +18,7 @@ void Game::start()
 
     while (!isExiting())
     {
-        gameLoop();
+        stateLoop();
     }
 
     mainWindow.close();
@@ -28,36 +29,69 @@ bool Game::isExiting()
     return gameState == Game::Exiting;
 }
 
-void Game::gameLoop()
+void Game::stateLoop()
 {
     sf::Event currentEvent;
+
+    switch (gameState)
+    {
+        case Game::ShowingSplash:
+            showSplashScreen();
+            break;
+
+        case Game::ShowingMenu:
+            showMainMenu();
+            break;
+
+        case Game::Playing:
+
+            mainWindow.clear(sf::Color(255,0,0));
+            mainWindow.display();
+
+    }
+
     while (mainWindow.pollEvent(currentEvent))
     {
-        switch (gameState)
+        if (currentEvent.type == sf::Event::Closed)
         {
-            case Game::ShowingSplash:
-                showSplashScreen();
-                break;
-
-            case Game::ShowingMenu:
-                break;
-
-            case Game::Playing:
-
-                mainWindow.clear(sf::Color(255,0,0));
-                mainWindow.display();
-
-                if (currentEvent.type == sf::Event::Closed)
-                {
-                    gameState = Game::Exiting;
-                }
-
-                break;
+            gameState = Game::Exiting;
         }
+
+        break;
     }
 }
 
-Game::GameState Game::gameState = Uninitialized;
+void Game::gameLoop()
+{
+    sf::Event currentEvent;
+
+    while (!(runningState == BackToMenu))
+    {
+        switch (runningState)
+        {
+            case BuildMode:
+                
+                break;
+
+            case WaveMode:
+                break;
+
+            case Paused:
+                break;
+
+        }
+
+        while (mainWindow.pollEvent(currentEvent))
+        {
+            if (currentEvent.type == sf::Event::Closed)
+            {
+                gameState = Game::Exiting;
+                return;
+            }
+        }
+    }
+
+}
 
 void Game::showSplashScreen()
 {
@@ -83,3 +117,5 @@ void Game::showMainMenu()
 }
 
 sf::RenderWindow Game::mainWindow;
+Game::GameState Game::gameState = Uninitialized;
+Game::RunningState Game::runningState = BuildMode;

@@ -2,6 +2,7 @@
 // Created by charles on 2/17/18.
 //
 
+#include <iostream>
 #include "SplashScreen.h"
 
 void SplashScreen::show(sf::RenderWindow &window)
@@ -10,6 +11,7 @@ void SplashScreen::show(sf::RenderWindow &window)
 
     if (!background.loadFromFile("images/Splashscreen.png"))
     {
+        std::cout << "No image found" << std::endl;
         return;
     }
 

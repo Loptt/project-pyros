@@ -8,7 +8,6 @@
 		<Option virtualFolders="CMake Files\;CMake Files\cmake-modules\;"/>
 		<Build>
 			<Target title="all">
-<<<<<<< HEAD
 				<Option working_dir="/home/charles/Github/project-pyros/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
@@ -41,40 +40,6 @@
 			<Target title="project-pyros">
 				<Option output="/home/charles/Github/project-pyros/cmake-build-debug/project-pyros" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/charles/Github/project-pyros/cmake-build-debug"/>
-=======
-				<Option working_dir="/home/charles/CLionProjects/project-pyros/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/charles/CLionProjects/project-pyros/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/charles/CLionProjects/project-pyros/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="project-pyros">
-				<Option output="/home/charles/CLionProjects/project-pyros/cmake-build-debug/project-pyros" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/charles/CLionProjects/project-pyros/cmake-build-debug"/>
->>>>>>> a49ded7547dbd5132c533c68a45bf7522c766416
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -89,7 +54,6 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< HEAD
 					<Build command="/usr/bin/make -f &quot;/home/charles/Github/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 project-pyros"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/charles/Github/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/charles/Github/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -99,17 +63,6 @@
 			<Target title="project-pyros/fast">
 				<Option output="/home/charles/Github/project-pyros/cmake-build-debug/project-pyros" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/charles/Github/project-pyros/cmake-build-debug"/>
-=======
-					<Build command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 project-pyros"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="project-pyros/fast">
-				<Option output="/home/charles/CLionProjects/project-pyros/cmake-build-debug/project-pyros" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/charles/CLionProjects/project-pyros/cmake-build-debug"/>
->>>>>>> a49ded7547dbd5132c533c68a45bf7522c766416
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -124,7 +77,6 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-<<<<<<< HEAD
 					<Build command="/usr/bin/make -f &quot;/home/charles/Github/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 project-pyros/fast"/>
 					<CompileFile command="/usr/bin/make -f &quot;/home/charles/Github/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -f &quot;/home/charles/Github/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -144,6 +96,12 @@
 		<Unit filename="/home/charles/Github/project-pyros/Game.h">
 			<Option target="project-pyros"/>
 		</Unit>
+		<Unit filename="/home/charles/Github/project-pyros/GameObjectManager.cpp">
+			<Option target="project-pyros"/>
+		</Unit>
+		<Unit filename="/home/charles/Github/project-pyros/GameObjectManager.h">
+			<Option target="project-pyros"/>
+		</Unit>
 		<Unit filename="/home/charles/Github/project-pyros/MainMenu.cpp">
 			<Option target="project-pyros"/>
 		</Unit>
@@ -156,38 +114,22 @@
 		<Unit filename="/home/charles/Github/project-pyros/SplashScreen.h">
 			<Option target="project-pyros"/>
 		</Unit>
+		<Unit filename="/home/charles/Github/project-pyros/VisibleGameObject.cpp">
+			<Option target="project-pyros"/>
+		</Unit>
+		<Unit filename="/home/charles/Github/project-pyros/VisibleGameObject.h">
+			<Option target="project-pyros"/>
+		</Unit>
 		<Unit filename="/home/charles/Github/project-pyros/main.cpp">
 			<Option target="project-pyros"/>
 		</Unit>
 		<Unit filename="/home/charles/Github/project-pyros/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
+		<Unit filename="/home/charles/Github/project-pyros/Splashscreen.png">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
 		<Unit filename="/home/charles/Github/project-pyros/cmake-modules/FindSFML.cmake">
-=======
-					<Build command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 project-pyros/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/charles/CLionProjects/project-pyros/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-		</Build>
-		<Unit filename="/home/charles/CLionProjects/project-pyros/Game.cpp">
-			<Option target="project-pyros"/>
-		</Unit>
-		<Unit filename="/home/charles/CLionProjects/project-pyros/Game.h">
-			<Option target="project-pyros"/>
-		</Unit>
-		<Unit filename="/home/charles/CLionProjects/project-pyros/main.cpp">
-			<Option target="project-pyros"/>
-		</Unit>
-		<Unit filename="/home/charles/CLionProjects/project-pyros/CMakeLists.txt">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/home/charles/CLionProjects/project-pyros/Splashscreen.png">
-			<Option virtualFolder="CMake Files\"/>
-		</Unit>
-		<Unit filename="/home/charles/CLionProjects/project-pyros/cmake-modules/FindSFML.cmake">
->>>>>>> a49ded7547dbd5132c533c68a45bf7522c766416
 			<Option virtualFolder="CMake Files\cmake-modules\"/>
 		</Unit>
 	</Project>

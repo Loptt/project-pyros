@@ -19,16 +19,15 @@ MainMenu::MenuResult MainMenu::show(sf::RenderWindow &window)
 
     MenuItem playButton;
     playButton.action = Play;
-    playButton.button.setSize(sf::Vector2f(1024, 235));
-    playButton.button.setPosition(sf::Vector2f(0,145));
+    //TODO: Add button positioning and size
 
     MenuItem instructionsButton;
     instructionsButton.action = Instructions;
+    //TODO: Add button positioning and size
 
     MenuItem exitButton;
     exitButton.action = Exit;
-    exitButton.button.setSize(sf::Vector2f(1024, 235));
-    exitButton.button.setPosition(sf::Vector2f(0,383));
+    //TODO: Add button positioning and size
 
     menuItems.push_back(playButton);
     menuItems.push_back(exitButton);
