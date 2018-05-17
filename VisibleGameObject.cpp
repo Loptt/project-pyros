@@ -38,11 +38,6 @@ void VisibleGameObject::draw(sf::RenderWindow *window)
     }
 }
 
-void VisibleGameObject::update(float elapsedTime)
-{
-
-}
-
 void VisibleGameObject::setPosition(sf::Vector2f position)
 {
     if (isLoaded)
