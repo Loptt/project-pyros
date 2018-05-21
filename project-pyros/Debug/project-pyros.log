@@ -1,2 +1,11 @@
-﻿  SplashScreen.cpp
-  project-pyros.vcxproj -> B:\Development\VisualStudio\project-pyros\Debug\project-pyros.exe
+﻿  VisibleGameObject.cpp
+  SplashScreen.cpp
+  PlayerBuild.cpp
+  MainMenu.cpp
+  main.cpp
+  GameObjectManager.cpp
+  Game.cpp
+  Button.cpp
+b:\development\github\project-pyros\project-pyros\button.cpp(38): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  project-pyros.vcxproj -> B:\Development\GitHub\project-pyros\Debug\project-pyros.exe

@@ -65,13 +65,15 @@ void Game::gameLoop()
 		switch (runningState)
 		{
 		case BuildMode:
-
+			performBuildMode();
 			break;
 
 		case WaveMode:
+			performWaveMode();
 			break;
 
 		case Paused:
+			showPausedScreen();
 			break;
 
 		}
@@ -103,14 +105,30 @@ void Game::showMainMenu()
 	switch (result)
 	{
 	case MainMenu::Exit:
-		gameState = Game::Exiting;
+		gameState = Exiting;
 		break;
 	case MainMenu::Play:
-		gameState = Game::Playing;
+		gameState = Playing;
 		break;
 	}
+}
+
+void Game::performBuildMode()
+{
+
+}
+
+void Game::performWaveMode()
+{
+
+}
+
+void Game::showPausedScreen()
+{
+
 }
 
 sf::RenderWindow Game::mainWindow;
 Game::GameState Game::gameState = Uninitialized;
 Game::RunningState Game::runningState = BuildMode;
+PlayerBuild Game::playerBuild;

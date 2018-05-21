@@ -135,6 +135,7 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObjectManager.h" />
     <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="PlayerBuild.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="resource1.h" />
     <ClInclude Include="SplashScreen.h" />
@@ -146,6 +147,7 @@
     <ClCompile Include="GameObjectManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="PlayerBuild.cpp" />
     <ClCompile Include="SplashScreen.cpp" />
     <ClCompile Include="VisibleGameObject.cpp" />
   </ItemGroup>
