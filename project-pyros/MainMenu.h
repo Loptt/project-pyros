@@ -1,23 +1,16 @@
 #pragma once
 #include "Button.h"
+#include "MasterMenu.h"
 #include <list>
 
-class MainMenu
+class MainMenu : public MasterMenu
 {
 public:
-	enum MenuResult { Nothing, Exit, Play, Instructions };
+	MainMenu();
+	~MainMenu();
 
-	struct MenuItem
-	{
-		Button button;
-		MenuResult action;
-	};
-
-	MenuResult show(sf::RenderWindow &window);
+	MenuResult show(sf::RenderWindow &window) override;
 
 private:
 
-	MenuResult getMenuResponse(sf::RenderWindow *window);
-	MenuResult handleClick(sf::Vector2i mousePos);
-	std::list<MenuItem> menuItems;
 };

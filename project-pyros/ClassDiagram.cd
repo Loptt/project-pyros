@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MasterMenu" Collapsed="true">
+    <Position X="4.75" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="MasterMenu::MenuResult" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MasterMenu.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="MasterMenu::MenuItem" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MasterMenu.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAASAABAEQAAAAAAA=</HashCode>
+      <FileName>MasterMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu" Collapsed="true">
+    <Position X="4.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAQAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>MainMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Game" Collapsed="true">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Game::GameState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Game::RunningState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Game.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAgAAAABAEABAAAAAwYAAggABAgAAA=</HashCode>
+      <FileName>Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerBuild" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAwAACQAAAAgAAAAAAAAQAAABAAAAAAgQAAAAAAA=</HashCode>
+      <FileName>PlayerBuild.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildMenu" Collapsed="true">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAgAAAA=</HashCode>
+      <FileName>BuildMenu.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="VisibleGameObject" Collapsed="true">
+    <Position X="7.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAIABACAAAAAAAABIBCACCABAAQgQAAAAAAAAEAAA=</HashCode>
+      <FileName>VisibleGameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tower" Collapsed="true">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEEAAAgAAAAAAAAAAAAAAQAQAAAAAAAAAAAQA=</HashCode>
+      <FileName>Tower.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObjectManager" Collapsed="true">
+    <Position X="1" Y="1.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="GameObjectManager::gameObjectDeallocator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>GameObjectManager.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AIAAAgAAAAAEBAAEAAAAQAAIAAAAAAABAAAAAAACAAA=</HashCode>
+      <FileName>GameObjectManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

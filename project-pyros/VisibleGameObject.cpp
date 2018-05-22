@@ -10,6 +10,14 @@ VisibleGameObject::~VisibleGameObject()
 
 }
 
+void VisibleGameObject::draw(sf::RenderWindow *window)
+{
+	if (isLoaded)
+	{
+		window->draw(sprite);
+	}
+}
+
 void VisibleGameObject::load(std::string filename)
 {
 	if (!texture.loadFromFile(filename))
@@ -23,14 +31,6 @@ void VisibleGameObject::load(std::string filename)
 		isLoaded = true;
 		sprite.setTexture(texture);
 		spriteDimensions = sprite.getLocalBounds();
-	}
-}
-
-void VisibleGameObject::draw(sf::RenderWindow *window)
-{
-	if (isLoaded)
-	{
-		window->draw(sprite);
 	}
 }
 

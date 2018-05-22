@@ -9,9 +9,9 @@ public:
 	VisibleGameObject();
 	virtual ~VisibleGameObject();
 
-	virtual void load(std::string filename);
 	virtual void draw(sf::RenderWindow *window);
 	virtual void update(float elapsedTime) = 0;
+	virtual void load(std::string filename);
 
 	virtual void setPosition(sf::Vector2f);
 	virtual void setPosition(float, float);

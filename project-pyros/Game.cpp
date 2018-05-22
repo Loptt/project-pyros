@@ -30,19 +30,20 @@ void Game::stateLoop()
 
 	switch (gameState)
 	{
-	case Game::ShowingSplash:
-		showSplashScreen();
-		break;
+		case Game::ShowingSplash:
+			showSplashScreen();
+			break;
 
-	case Game::ShowingMenu:
-		showMainMenu();
-		break;
+		case Game::ShowingMenu:
+			showMainMenu();
+			break;
 
-	case Game::Playing:
+		case Game::Playing:
+			gameLoop();
+			break;
 
-		mainWindow.clear(sf::Color(255, 0, 0));
-		mainWindow.display();
-
+		case Game::Exiting:
+			return;
 	}
 
 	while (mainWindow.pollEvent(currentEvent))
@@ -64,17 +65,17 @@ void Game::gameLoop()
 	{
 		switch (runningState)
 		{
-		case BuildMode:
-			performBuildMode();
-			break;
+			case BuildMode:
+				performBuildMode();
+				break;
 
-		case WaveMode:
-			performWaveMode();
-			break;
+			case WaveMode:
+				performWaveMode();
+				break;
 
-		case Paused:
-			showPausedScreen();
-			break;
+			case Paused:
+				showPausedScreen();
+				break;
 
 		}
 
@@ -104,18 +105,42 @@ void Game::showMainMenu()
 
 	switch (result)
 	{
-	case MainMenu::Exit:
-		gameState = Exiting;
-		break;
-	case MainMenu::Play:
-		gameState = Playing;
-		break;
+		case MainMenu::Exit:
+			gameState = Exiting;
+			break;
+		case MainMenu::Play:
+			gameState = Playing;
+			break;
 	}
 }
 
 void Game::performBuildMode()
 {
+	PlayerBuild::BuildReturn response;
+	 response = playerBuild.buildMode(mainWindow);
 
+	 switch (response)
+	 {
+		case PlayerBuild::Building:
+			//No change, keep building
+			break;
+
+		case PlayerBuild::Pause:
+			runningState = Game::Paused;
+			break;
+
+		case PlayerBuild::StartWave:
+			runningState = Game::WaveMode;
+			break;
+
+		case PlayerBuild::Exit:
+			runningState = Game::BackToMenu;
+			gameState = Game::Exiting;
+			break;
+
+		default:
+			break;
+	 }
 }
 
 void Game::performWaveMode()

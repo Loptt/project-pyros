@@ -15,7 +15,7 @@ public:
 
 	void drawAll(sf::RenderWindow &window);
 	void updateAll(float timeDelta);
-
+	
 private:
 	std::map<std::string, VisibleGameObject*> gameObjects;
 
